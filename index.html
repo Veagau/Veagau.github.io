@@ -1,177 +1,242 @@
-
+<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>辛谷集</title>
-<meta name="description" content="温故而知新">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Veagau.github.io/favicon.ico?v=1619594048043">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="温故而知新"/>
+<meta name="keywords" content="温故而知新"/>
+<link rel="shortcut icon" href="https://Veagau.github.io/favicon.ico">
 <link rel="stylesheet" href="https://Veagau.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<!-- Comment -->
 
 
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://Veagau.github.io">
-        <img class="avatar" src="https://Veagau.github.io/images/avatar.png?v=1619594048043" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://Veagau.github.io">
-        <h1 class="site-title">辛谷集</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
 
-      <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://Veagau.github.io/post/about/">
-        <h2 class="post-title">关于</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-01-25</span>
-        
-      </div>
-    </div>
-    
-  </section>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://Veagau.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+</head>
+<body class="home-template">
+<div id="page" class="site">
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://Veagau.github.io/tag/rZ7SvxrTf/">
-                Gridea
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://Veagau.github.io/post/hello-gridea/">
-        <div class="feature-container" style="background-image: url('https://Veagau.github.io/post-images/hello-gridea.png')">
+    <header class="site-header">
+    <h1 class="site-title"><a href="https://Veagau.github.io">辛谷集</a></h1>
+    <a class="sidebar-toggle"><span class="screen-reader-text">Menu</span><span class="icon" aria-hidden="true"></span></a>
+</header>
+
+<aside class="sidebar">
+    <div class="sidebar-scrollable">
+        <div class="inner">
+            <div class="widget-area">
+                <!-- 菜单 -->
+                <nav class="site-navigation">
+                    <h2>辛谷集</h2>
+                    <ul class="menu">
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/"
+                                
+                                >首页</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/archives"
+                                
+                                >归档</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/tags"
+                                
+                                >标签</a>
+                            </li>
+                        
+                            <li class="menu-item home current-menu-item">
+                                <a href="/post/about"
+                                
+                                >关于</a>
+                            </li>
+                        
+                    </ul>
+                </nav>
+
+                <section class="widget widget-about">
+                    <h2 class="widget-title">关于</h2>
+                    <p>温故而知新</p>
+                </section>
+
+                <section class="widget widget-tags">
+                    <h2 class="widget-title">标签</h2>
+                    <div class="tagcloud">
+                        
+                            <a href="https://Veagau.github.io/tag/rZ7SvxrTf/" class="button">
+                                Gridea
+                                <span aria-hidden="true"><span class="line left"></span><span class="line top"></span><span class="line right"></span><span class="line bottom"></span></span>
+                            </a>
+                        
+                    </div>
+                </section>
+
+            </div>
+            <a class="sidebar-toggle"><span class="screen-reader-text">Close</span><span class="icon" aria-hidden="true"></span></a>
         </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">温故而知新</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Veagau.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
+</aside>
 
-hljs.initHighlightingOnLoad()
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+    <main class="site-main">
+        <div class="site-content">
+            <!-- 封面 -->
+            <div class="cover hero">
+                <div class="cover-bg" style="background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);">
+                    
+                </div>
+                <div class="cover-content">
+                    <!-- 封面内容 -->
+                    <div class="inner">
+                        <h2 class="hero-title"></h2>
+                        <p class="hero-text"></p>
+                        <a href="#post-list" class="arrow-down" data-scroll><span class="screen-reader-text">Scroll Down</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post-list -->
+            <div id="post-list" class="post-list inner">
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://Veagau.github.io/post/about/">关于</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">1 min read</span>
+                                    <time class="published"
+                                          datetime="2019-01-25">2019-01-25</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://Veagau.github.io/post/about/">
+                                    Read More
+                                    <span aria-hidden="true"></span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="post">
+                        <!-- post-header -->
+                        <header class="post-header">
+                            <div class="post-tags">
+                                
+                                    
+                                        <a href="https://Veagau.github.io/tag/rZ7SvxrTf/">Gridea&nbsp;&nbsp;</a>
+                                    
+                                
+                            </div>
+                            <div class="post-header-wrap">
+                                <h2 class="post-title">
+                                    <a href="https://Veagau.github.io/post/hello-gridea/">Hello Gridea</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="post-author">2 min read</span>
+                                    <time class="published"
+                                          datetime="2018-12-12">2018-12-12</time>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- post-content -->
+                        <div class="post-content">
+                            <div class="read-more">
+                                <a class="button" href="https://Veagau.github.io/post/hello-gridea/">
+                                    Read More
+                                    <span aria-hidden="true"></span>
+                                    <span class="line left"></span>
+                                    <span class="line top"></span>
+                                    <span class="line right"></span>
+                                    <span class="line bottom"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                
+            </div>
+
+            <nav class="pagination">
+    <h2 class="screen-reader-text">Posts Navigation</h2>
+    <div class="inner">
+        <span class="page-number"></span>
+        
+        
+    </div>
+</nav>
+
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="inner">
+        <!-- 社交 -->
+        <div class="offsite-links">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+
+        <div class="site-info">
+            THEME BY <a href="https://github.com/GalaxySuze/gridea-theme-subtle-galaxy">Subtle Galaxy</a>, REFERENCE FROM <a href="https://subtle.justgoodthemes.com/">Subtle</a><br/>
+            Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+        </div>
+        <a href="#page" class="arrow-up" data-scroll><span class="screen-reader-text">Back to the top</span></a>
+    </div>
+</footer>
+
+
+</div>
+
+<script src="https://Veagau.github.io/media/scripts/_core/plugins.js"></script>
+<script src="https://Veagau.github.io/media/scripts/_core/custom.js"></script>
+
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://Veagau.github.io/media/scripts/_vendors/md5.min.js"></script>
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
 
 </script>
 
 
 
 
-  </body>
+
+</body>
 </html>
